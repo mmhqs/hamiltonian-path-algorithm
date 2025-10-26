@@ -1,7 +1,7 @@
 # Hamiltonian Path algorithm
 This repo presents a Python implementation of the algorithm to find a Hamiltonian path in a given graph. 
 
-<img src="images/graph2.JPG" alt="graph2" width="400"/>
+<img src="docs/images/graph2.JPG" alt="graph2" width="400"/>
 
 [1. Understanding the algorithm](#understanding-the-algorithm)
 
