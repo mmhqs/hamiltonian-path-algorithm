@@ -55,18 +55,13 @@ class Graph:
         Tenta encontrar um Caminho Hamiltoniano no grafo.
         Retorna o caminho (lista) se encontrado, ou None se não existir.
         """
-        # Tenta iniciar o caminho a partir de cada vértice
         for start_node in range(self.V):
-            # Inicializa o caminho com o nó de início
             path = [start_node]
-            # Conjunto para rastrear vértices visitados (busca rápida)
             visited = {start_node}
 
-            # Chama a função de backtracking
             if self._solve_hamiltonian_util(start_node, path, visited):
-                return path  # Retorna o primeiro caminho encontrado
+                return path
 
-        # Se tentamos todos os nós iniciais e nenhum funcionou
         return None
 
 
