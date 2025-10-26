@@ -87,7 +87,7 @@ Tries to find a Hamiltonian Path starting from each possible vertex. Returns the
 
 #### Example 1 — Undirected Graph (has a path)
 
-![example1](images/example1.JPG)
+<img src="images/example1.JPG" alt="example1" width="300"/>
 
 ```python
 g1 = Graph(5, directed=False)
@@ -106,7 +106,7 @@ print(path1)
 
 #### Example 2 — Directed Graph (has a path)
 
-![example2](images/example2.JPG)
+<img src="images/example2.JPG" alt="example2" width="300"/>
 
 ```python
 g2 = Graph(4, directed=True)
@@ -125,7 +125,7 @@ print(path2)
 
 #### Example 3 — Undirected Graph (no path)
 
-![example3](images/example3.JPG)
+<img src="images/example3.JPG" alt="example3" width="300"/>
 
 ```python
 g3 = Graph(6, directed=False)
