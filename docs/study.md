@@ -5,7 +5,7 @@ If the path returns to the starting vertex, it is called a Hamiltonian cycle.Det
 
 🔹 Simple example: check out the graph below.
 
-<img src="images/graph1.JPG" alt="graph1" width="300"/>
+<img src="images/graph1.JPG" alt="graph1" width="400"/>
 
 A possible Hamiltonian path is: 0 → 1 → 2 → 3
 

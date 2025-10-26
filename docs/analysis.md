@@ -8,10 +8,14 @@ The Hamiltonian Path problem is classified as NP-Complete. A problem is NP-Compl
 
 NP-Complete problems are considered the "hardest" problems within the NP class. The Traveling Salesperson Problem (TSP), for example, is a generalization of the Hamiltonian Path/Cycle problem, and this relationship is key to understanding its difficulty. Because the NP-Complete Hamiltonian problem can be solved using a TSP algorithm, it proves that the TSP is NP-Hard. It is at least as difficult as the Hamiltonian problem.
 
+---
+
 ### Analysis of asymptotic time complexity
 The time complexity is `O(V * V!)` (fatorial complexity), where `V` is the number of vertices.This was determined by Recursion Tree Analysis (not the Master Theorem).
 - `O(V!)`: the recursive backtracking function, in the worst case (a complete graph).
 - `O(V * ...)`: the main function runs this `O(V!)` algorithm once for every possible starting vertex (`V` times in total).
+
+---
 
 ### Application of the Master Theorem
 The Master Theorem **cannot be applied to the Hamiltonian Path algorithm**. The Master Theorem is a specific tool used only for analyzing divide-and-conquer algorithms whose runtime recurrence fits the precise formula:
@@ -28,6 +32,8 @@ The Hamiltonian Path algorithm fails to meet these criteria for two main reasons
 2. **Number of subproblems (Not constant)**: the number of recursive calls (`a`) is not constant. It depends on the number of unvisited neighbors for the current vertex, which can be different at every step of the execution.
 
 In summary, the Master Theorem is the wrong tool because this algorithm's complexity is defined by a state-space search tree, not by a divide-and-conquer recurrence.
+
+---
 
 ### Analysis of complexity cases
 - Best case: `O(V)` (Linear): the algorithm finds the path on its first attempt with zero backtracking (e.g., in a simple line graph 0-1-2-3). Performance is extremely fast.
